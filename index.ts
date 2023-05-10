@@ -45,7 +45,7 @@ export class PhantomConnector extends InjectedConnector {
         }
 
         if (typeof window === 'undefined') return
-        const ethereum = window.phantom.ethereum as WindowProvider | undefined
+        const ethereum = window?.phantom?.ethereum as WindowProvider | undefined
         if (ethereum?.providers) return ethereum.providers.find(getReady)
         return getReady(ethereum)
       },
