@@ -1,13 +1,26 @@
 {
-    "compilerOptions": {
-      "target": "es6",
-      "module": "commonjs",
-      "lib": ["es2017", "es7", "es6", "dom"],
-      "declaration": true,
-      "outDir": "dist",
-      "strict": true,
-      "esModuleInterop": true
-    },
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": ".",
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "lib": ["es2021", "dom"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "noImplicitAny": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "target": "es2021",
+    "types": ["node"]
+  }, 
     "exclude": [
       "node_modules",
       "dist"
