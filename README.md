@@ -47,9 +47,9 @@ const connector = new PhantomConnector({
 ```
 
 ### shimDisconnect
-```javascript
 
 Phantom does not support programmatic disconnect on EVM chains. This flag simulates the disconnect behavior by keeping track of connection status in storage. Defaults to true.
+```javascript
 
 import { PhantomConnector } from 'phantom-wagmi-connector'
  
