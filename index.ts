@@ -1,9 +1,5 @@
-import {
-  ConnectorNotFoundError,
-  WindowProvider,
-  InjectedConnector,
-  InjectedConnectorOptions,
-} from "@wagmi/core";
+import { InjectedConnector } from 'wagmi/connectors/injected'
+import { WindowProvider, ConnectorNotFoundError } from 'wagmi'
 import {
   ProviderRpcError,
   ResourceNotFoundRpcError,
@@ -12,6 +8,25 @@ import {
 } from "viem";
 import type { Address } from "abitype";
 import type { Chain } from "@wagmi/core/chains";
+
+
+type InjectedConnectorOptions = {
+  /** Name of connector */
+  name?: string | ((detectedName: string | string[]) => string)
+  /**
+   * [EIP-1193](https://eips.ethereum.org/EIPS/eip-1193) Ethereum Provider to target
+   *
+   * @default
+   * () => typeof window !== 'undefined' ? window.ethereum : undefined
+   */
+  getProvider?: () => WindowProvider | undefined
+  /**
+   * MetaMask and other injected providers do not support programmatic disconnect.
+   * This flag simulates the disconnect behavior by keeping track of connection status in storage. See [GitHub issue](https://github.com/MetaMask/metamask-extension/issues/10353) for more info.
+   * @default true
+   */
+  shimDisconnect?: boolean
+}
 
 declare global {
   interface Window {

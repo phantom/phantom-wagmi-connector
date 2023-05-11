@@ -12,16 +12,16 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@wagmi/core": "^1.0"
+    "wagmi": "^1.0.2"
   },
   "devDependencies": {
     "typescript": "^4.8.3",
     "viem": "^0.3.19"
   },
   "peerDependencies": {
-    "viem": "^0.3.19",
     "react": ">=17.0.0",
-    "typescript": ">=4.9.4"
+    "typescript": ">=4.9.4",
+    "viem": "^0.3.19"
   },
   "peerDependenciesMeta": {
     "typescript": {
