@@ -1,6 +1,6 @@
 {
   "name": "phantom-wagmi-connector",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "This small package allows you to add a dedicated, functional, connector to integrate Phantom into your wagmi ^v1 project",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
