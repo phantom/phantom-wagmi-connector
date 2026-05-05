@@ -14,6 +14,9 @@
   "dependencies": {
     "wagmi": "^1.0.2"
   },
+  "resolutions": {
+    "axios": "0.31.1"
+  },
   "devDependencies": {
     "typescript": "^4.8.3",
     "viem": "^0.3.19"
