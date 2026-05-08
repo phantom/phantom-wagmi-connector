@@ -27,5 +27,8 @@
     "typescript": {
       "optional": true
     }
+  },
+  "resolutions": {
+    "axios": "0.30.3"
   }
 }
